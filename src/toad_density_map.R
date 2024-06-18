@@ -159,7 +159,7 @@ pointDensity <- pointDensity*1000000
 
 hist(pointDensity, breaks=100) #, ylim=c(0,6000)
 
-# sanity check - have we got the same unmber of toads (approximately) as we started with?
+# sanity check - have we got the same number of toads (approximately) as we started with?
 sum(pointDensity, na.rm =TRUE) # given 1km^2 grid cells = total toads
 660.3271 * nrow(all_coords) # number we started with
 # pretty good: we lost a few to the ocean.
